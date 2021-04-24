@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+{% block content %}
+
+{% if message %}
+        <div class="alert alert-danger">{{ message }}</div>
+{% endif %}
+<div class="row"   style="margin-bottom: 300px;">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="card card-body">
+            <center>
+                <h3> Upload the image of Mole or Melanoma</h3>
+                    <center>
+                        <form class="form-horizontal"  action="{{ url_for('molesegmentationPage') }}" enctype="multipart/form-data" method="POST">
+                        <input type="file" name="img_mole" placeholder="Upload Image"> 
+                        <input type="submit" value="Submit">
+                        </form>
+                    </center>
+                <b> Please provide photo according to the example below </b>
+            <img src="static/images/example_mole.png" alt="" class="img_example_mole" width="300" height="300">
+            </center>
+
+            
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+{% endblock %}

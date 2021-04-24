@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+{% block content %}
+{% if message %}
+        <div class="alert alert-danger">{{ message }}</div>
+    {% endif %}
+<div class="container">
+    <div class="card card-body" style="border: 1px solid black; box-shadow: 0 0 10px black;">
+        <h2>Deep Learning based WebApp.</h2>
+        <p>These Machine Learning models and Deep Leaning models are trained on large datasets and thousands of images.</p>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 5px;">
+                <h4>Pneumonia</h4>
+                <p>Pneumonia is an infection that inflames the air sacs in one or both lungs. The air sacs may fill with fluid or pus (purulent material), causing cough with phlegm or pus, fever, chills, and difficulty breathing. A variety of organisms, including bacteria, viruses and fungi, can cause pneumonia.</p>
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 5px;">
+                <h4>Mole Segmentation</h4>
+                <p> In this project I implement several neural network architectures from scratch to solve the semantic segmentation problem: SegNet, UNet, Unet2. As a loss function used the following: BCE, DICE, Focal, and Lovász-Softmax. </p>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
